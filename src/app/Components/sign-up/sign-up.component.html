@@ -1,0 +1,29 @@
+<form action="" [formGroup]="signUp" autocomplete="on" (submit)="onSubmit()">
+  <h1>SIGN UP FORM</h1>
+  <div class="container">
+
+    <div class="email">
+      <input type="email" name="Mail" formControlName="email" placeholder="Email Address">
+    </div>
+    <div *ngIf="email?.dirty && email?.invalid">
+      <span class="error">Enter valid email</span>
+    </div>
+    <div class="password">
+      <input type="password" formControlName="password" placeholder="Password" pattern="[A-Z]*" minlength="8" [type]="show? 'text' : 'password'" autocomplete="on">
+      <i *ngIf="!show && password?.dirty" class="fa fa-eye" (click)="view()" ></i>
+      <i *ngIf=" show  && password?.dirty" class="fa fa-eye-slash" (click)="view()"></i>
+    </div>
+    <div *ngIf="password?.dirty && password?.invalid">
+      <span class="error">Password should be in all caps,<br>
+      & contain atleat 8 letters</span>
+    </div>
+
+    <div class="route">
+      <label for="route"><a (click)="openLogin()"> <u>Login Instead ?</u></a></label>
+    </div>
+    <div class="loginBtn">
+      <input type="submit" value="Sign Up" [disabled]="signUp?.invalid">
+    </div>
+
+  </div>
+</form>

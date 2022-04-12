@@ -1,0 +1,161 @@
+/* FOOTER*************************************************************************************/
+.container{
+  margin-top: -300px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color:rgb(43, 42, 42);
+  column-gap: 100px;
+  height: 350px;
+  width: 100%;
+  color: white;
+  justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.q-links h1{
+  font-size:25px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+hr{
+  margin-top: 10px;
+  border-color:violet;
+  width: 30px;
+}
+
+.qq-links{
+  margin-top: 30px;
+  display: flex;
+  gap: 100px;
+}
+
+.l-a li, .l-b li{
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.l-a li a, .l-b li a{
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+}
+
+.l-a li a:hover, .l-b li a:hover{
+  color: violet;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:white;
+  transform-origin: bottom left;/*changing the directions also changes line's hover style*/
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;/*changing the directions also changes line's hover style*/
+}
+
+.mobile{
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.mobile i{
+  font-size:18px ;
+  color: white;
+}
+
+.mobile p{
+  font-size:18px ;
+  margin-top: 10px;
+}
+
+.email{
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.email i{
+  font-size:18px ;
+  color: white;
+}
+
+.email p{
+  font-size:18px ;
+  margin-top: 10px;
+}
+
+.social{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social i{
+  font-size: 20px;
+  margin-left: -50px;
+  color: white;
+}
+
+.time{
+  display: flex;
+  gap: 30px;
+  margin-top:30px ;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.clock img{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.hrs{
+  border:1px solid gray;
+  padding: 10px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.hrs h4,p{
+  font-family: "Roboto", Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.rights{
+  height: 50px;
+  background-color:rgb(43, 42, 42);
+  margin-top: -50px;
+  width: 100%;
+}
+
+.rights hr{
+  width: 100%;
+  border-color:rgb(43, 42, 42);
+}
+
+.rights p{
+  margin-top: -10px;
+  color: white;
+  text-align: center;
+  font-size: small;
+}
+/* FOOTER*************************************************************************************/

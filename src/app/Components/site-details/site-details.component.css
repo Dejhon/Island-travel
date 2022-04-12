@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  height: 450px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 450px;
+}
+
+.details{
+  text-align: center;
+  align-content: space-around;
+  width: 250px;
+}
+
+
+.details .header{
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.details p{
+  margin-top: 12px;
+  line-height: 1.5rem;
+}
+mat-icon{
+  color:purple;
+}

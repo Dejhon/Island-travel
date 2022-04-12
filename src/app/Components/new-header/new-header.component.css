@@ -1,0 +1,109 @@
+img{
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 59%, 50.1% 100%, 0% 59%); */
+  width: 100%;
+  height: 650px;
+}
+
+/* Add overlay to image */
+.overlay{
+  margin-top: -656px;
+  width: 100%;
+  height: 650px;
+  background: rgb(65, 11, 65);
+  position: absolute;
+  opacity: 75%;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 59%, 50.1% 100%, 0% 59%); */
+  }
+
+.info{
+  color:black;
+  opacity: 100%;
+  text-align: center;
+  margin-top: 100px;
+  opacity: 99%;
+}
+
+.info p{
+  font-family: 'Vujahday Script', cursive;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: white;
+  margin-top: -530px;
+}
+
+.info h2{
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 7px;
+  font-size: 150px;
+  color: white;
+  margin-top: 70px;
+  font-weight: 600;
+}
+
+.info .mountain_outline img{
+  color: white;
+  width: 750px;
+  height: 300px;
+  margin-top: 10px;
+  transform: rotate(-12deg);
+}
+
+.bookNow button{
+  border: 1px solid white;
+  padding: 10px;
+  width: 180px;
+  margin-top: 170px;
+  background: transparent;
+}
+
+.bookNow button a{
+  text-decoration: none;
+  font-family: 'Encode Sans', sans-serif;
+  color: white;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.navbar{
+  width: 100%;
+  height: 100px;
+  margin-top: -510px;
+  opacity: 99%;
+  margin-left: 1px;
+}
+
+.navbar ul{
+  display: flex;
+  margin-top: -160px;
+  float: right;
+}
+
+.navbar ul li{
+  padding-left: 60px;
+  padding-right: 60px;
+  list-style: none;
+  font-size: 25px;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  font-family: 'Encode Sans', sans-serif;
+  color: white;
+}
+
+.navbar ul li a:hover{
+  color:violet;
+}
+
+#logo img{
+  width: 240px;
+  height: 240px;
+  margin-top: -140px;
+  margin-left: 100px;
+}
+
+.pointer{
+  cursor: pointer;
+}

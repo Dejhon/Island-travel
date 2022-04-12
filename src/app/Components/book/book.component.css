@@ -1,0 +1,166 @@
+form{
+  margin: auto;
+  width: 600px;
+  margin-bottom: -100px;
+  height: 500px;
+  margin-top: 480px;
+  padding-bottom: 450px;
+}
+
+form h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: darkslategray;
+}
+
+form label{
+  font-size: 16px;
+}
+
+.name input, .email input{
+  width: 600px;
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.email, .destinations, .persons, .date, .submitBtn, .cost, .bankCard, .CVC{
+  margin-top: 25px;
+}
+
+.destinations{
+  width: inherit;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.destinations input{
+  height: 40px;
+  font-size: 18px;
+  width: 290px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.destinations .arrival, .CVC .cardExpire{
+  margin-left: 8px;
+}
+
+.destinations .arrival select{
+  height: 40px;
+  font-size: 18px;
+  width: 290px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.persons{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.persons input{
+  height: 40px;
+  font-size: 18px;
+  width: 290px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.persons .children{
+  margin-left: 8px;
+}
+
+.date input{
+  width: 600px;
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid gray;
+  outline: gray;
+  border: 1px solid gray;
+  color: gray;
+}
+
+.bankCard{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: inherit;
+}
+
+.bankCard input{
+  width: 290px;
+  height: 40px;
+  font-size: 18px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.bankCard select{
+  width: 290px;
+  height: 42px;
+  font-size: 18px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.bankCard input{
+  margin-left: 8px;
+}
+
+.CVC{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: inherit;
+}
+
+.CVC input{
+  height: 40px;
+  font-size: 18px;
+  width: 290px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.cardExpire{
+  display: flex;
+}
+
+.cardExpire select{
+  height: 40px;
+  font-size: 18px;
+  width: 145px;
+  border: 1px solid gray;
+  outline: gray;
+  color: gray;
+}
+
+.submitBtn input{
+  width: 180px;
+  height: 40px;
+  border: 1px solid violet;
+  background-color: violet;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.submitBtn input:disabled{
+  cursor: not-allowed;
+}
+
+.error{
+  color: red;
+}
+
+.cost p{
+  font-size: 16px;
+}

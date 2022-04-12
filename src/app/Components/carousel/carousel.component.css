@@ -1,0 +1,55 @@
+.carousel{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  padding-top: 2%;
+  position: absolute;
+  opacity: 1;
+  margin-top: -175px;
+  background-color:white;
+}
+
+.brn h1{
+  font-family: 'Poppins', sans-serif;
+  color: lightslategray;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-right: -50px;
+ }
+
+i{
+  font-size: 2rem;
+  color: gray;
+  position: relative;
+}
+
+.logos{
+  display: flex;
+  justify-content: space-between;
+  width:750px;
+  overflow: hidden;
+  margin-bottom: -5em;
+  height: 230px;
+}
+
+.logos img{
+  margin-left: -10px;
+  width: 200px;
+  height: 118px;
+  -webkit-box-shadow: 18px 18.5px 18px -8px #faa3d3;
+  -moz-box-shadow: 18px 18.5px 18px -8px #faa3d3;
+  box-shadow: 18px 18.5px 18px -8px #faa3d3;
+  position: relative;
+}
+
+.logos div{
+  margin-left: 51px;
+  margin-right: 0px;
+}
+

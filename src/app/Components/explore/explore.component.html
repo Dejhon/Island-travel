@@ -1,0 +1,47 @@
+<app-explore-header></app-explore-header>
+
+<div class="main_wrapper">
+
+  <h1 class="title">CHOOSE YOUR LOCAL TOURS AND EXCURSIONS</h1>
+
+<div class="filter">
+    <div class="filterBtn">
+      <select [name]="filter"  [(ngModel)]="filterLocation">
+        <optgroup [label]="filter">
+        <option>Kingston</option>
+        <option>Montego Bay</option>
+        <option>St.Anns</option>
+        <option>St.Elizabeth</option>
+        <option>Westmoreland</option>
+      </optgroup>
+      </select>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="Search By Name" [(ngModel)]="searchText">
+    </div>
+</div>
+
+<div class="container" *ngFor="let x of tour | filter:searchText | filter:filterLocation" data-aos="fade-right"  data-aos-duration="2000" >
+  <div class="wrapper" >
+    <div class="image">
+      <img src="{{x.Picture}}">
+    </div>
+    <div class="info">
+      <div><h1>{{x.Name}}</h1></div>
+      <div class="location"><h2><span class="icon"><i class="fa fa-map-marker" style="font-size:24px"></i></span>{{x.Location}}</h2></div>
+      <div class="descriptions">
+        <div><p>{{x.Description}}</p></div>
+        <div class="booking">
+          <h2>{{x.Price | currency}}</h2>
+          <div>
+            <button><span><i class="fa fa-bus" style="font-size:24px"></i></span><span class="text"><a routerLink="/book">BOOK NOW</a></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,56 @@
+<form action="" [formGroup]="Login" autocomplete="on" (submit)="onSubmit()">
+  <h1>LOGIN FORM</h1>
+  <div class="container">
+
+    <div class="email">
+      <input type="email" name="Mail" formControlName="email" placeholder="Email Address">
+    </div>
+    <div *ngIf="email?.dirty && email?.invalid">
+      <span class="error">Enter valid email</span>
+    </div>
+    <div class="password">
+      <input type="password" formControlName="password" placeholder="Password" pattern="[A-Z]*" minlength="8" [type]="show? 'text' : 'password'" autocomplete="on">
+      <i *ngIf="!show && password?.dirty" class="fa fa-eye" (click)="view()" ></i>
+      <i *ngIf=" show  && password?.dirty" class="fa fa-eye-slash" (click)="view()"></i>
+    </div>
+    <div *ngIf="password?.dirty && password?.invalid">
+      <span class="error">Password should be in all caps,<br>
+      & contain atleat 8 letters</span>
+    </div>
+
+    <div class="route">
+      <label for="route"><a (click)="openSignUp()"> <u>Sign Up Instead ?</u></a></label>
+    </div>
+    <div class="loginBtn">
+      <input type="submit" value="Login" [disabled]="Login?.invalid">
+    </div>
+
+  </div>
+</form>
+
+<!-- <form action="" [formGroup]="Login" (submit)="onSubmit()" autocomplete="on">
+  <div class="container">
+    <h2>Login</h2>
+    <div class="email">
+      <input type="email" formControlName="email" placeholder="Email Address">
+      <div *ngIf="email?.dirty && email?.invalid">
+        <span class="error">Enter valid email</span>
+      </div>
+    </div>
+    <div class="password">
+      <input type="password" formControlName="password" placeholder="Password" pattern="[A-Z]*" minlength="8" [type]="show? 'text' : 'password'">
+        <i *ngIF="!show && password?.dirty" class="fa fa-eye" (click)="view()" ></i>
+        <i *ngIF="password?.dirty" class="fa fa-eye-slash" (click)="view()"></i>
+      <div *ngIf="password?.dirty && password?.invalid">
+        <span class="error">Password should be in all caps,<br>
+        & contain atleat 8 letters</span>
+      </div>
+    </div>
+    <div class="route">
+      <label for="route"><a (click)="openSignUp()"> <u>Sign Up Instead ?</u></a></label>
+    </div>
+    <div class="loginBtn">
+      <input type="submit" value="Login" [disabled]="Login?.invalid">
+    </div>
+  </div>
+</form> -->

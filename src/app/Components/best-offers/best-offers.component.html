@@ -1,0 +1,51 @@
+<div class="wrapper">
+  <div class="background">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="header" data-aos="zoom-in" data-aos-duration="2500">
+    <h1>Choose Your Destination</h1>
+    <p>Visit the best attractions in Jamaica</p>
+  </div>
+
+  <div class="display">
+    <div class="card" *ngFor="let x of offer" data-aos="fade-up" data-aos-duration="2500">
+      <div class="company_title">
+        <h1>{{ x.companyName }}</h1>
+      </div>
+
+      <div class="company_image">
+        <div class="logowhite">
+          <img src="assets/Images/logoDesign (2).png" alt="" />
+        </div>
+        <img src="{{ x.companyImage }}" />
+        <div class="card_overlay"></div>
+        <div class="info">
+          <div class="book">
+            <div class="price">
+              {{ x.price | currency: "USD":"symbol":"1.0-0" }} USD
+            </div>
+            <div class="btn">
+              <button><a routerLink="/book">BOOK NOW</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card">
+  <img src="assets/Images/Rick-cafe.jpg" alt="Avatar" style="width:300px">
+  <div class="container">
+    <h4><b>Rick's Cafe</b></h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus, quis quibusdam ex rerum unde.
+    </p>
+  </div>
+  <div class="btn">
+   <div class="price">$40 USD</div>
+   <div class="book-btn">
+     <button>Book Now</button>
+   </div>
+  </div>
+</div> -->

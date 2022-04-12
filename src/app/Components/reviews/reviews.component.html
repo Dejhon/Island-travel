@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="overlay"></div>
+
+  <div class="header" >
+    <p>What can they say about us?</p>
+    <h1>REVIEWS</h1>
+  </div>
+
+  <div class="display">
+        <div class="customerImage">
+    <div class="reviews" *ngFor="let x of review;let i = index" [class.odd]="i % 1 == 0" [class.right]="i % 2 != 0" data-aos="zoom-in-up"  data-aos-offset="20" data-aos-duration="2000">
+      <div class="key-line"><label for="keyLine">{{x.keyLine}} !</label></div>
+      <div class="review-info" ><p>{{x.customerReview}}</p></div>
+      <div class="customer">
+        <div class="customerImage">
+          <img src="{{ x.customerImage }}">
+        </div>
+        <div class="customerName">
+          <label for="customername">{{x.customerName}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

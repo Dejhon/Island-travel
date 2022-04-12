@@ -1,0 +1,159 @@
+<app-contact-header></app-contact-header>
+<form action="" [formGroup]="bookingForm" (submit)="onSubmit()">
+  <h1>BOOKING</h1>
+  <div class="container">
+    <div class="name">
+      <label for="Full Name">Full Name<span *ngIf="fullName?.invalid" style="color: red;">*</span></label>
+      <input type="text" placeholder="Full Name" formControlName="fullName">
+      <div *ngIf="fullName?.invalid && fullName?.touched">
+        <span class="error">Full Name Required</span>
+      </div>
+    </div>
+    <div class="email">
+      <label for="Email">Email<span *ngIf="email?.invalid" style="color: red;">*</span></label>
+      <input type="email" placeholder="Email Address" formControlName="email">
+      <div *ngIf="email?.invalid && email?.touched">
+        <span class="error">Valid Email Required</span>
+      </div>
+    </div>
+    <div class="destinations">
+      <div class="depart">
+        <label for="Depart">Address<span *ngIf="pickUp?.invalid" style="color: red;">*</span></label>
+        <input type="text" placeholder="From" formControlName="pickUp" >
+        <div *ngIf="pickUp?.invalid && pickUp?.touched">
+          <span class="error">Location Required</span>
+        </div>
+      </div>
+      <div class="arrival">
+        <label for="Arrival">Destination<span *ngIf="destination?.invalid" style="color: red;">*</span></label><br>
+        <select formControlName="destination">
+          <option value="50">Appleton Estate</option>
+          <option value="35">ATV Montego Bay</option>
+          <option value="40">Black River Safari</option>
+          <option value="30">Blue Hole Secret Falls</option>
+          <option value="45">Bob Marley Museum</option>
+          <option value="60">Deep Sea Fishing</option>
+          <option value="80">Dolphin Cove</option>
+          <option value="20">Dunn's River Falls</option>
+          <option value="35">Horse Back Riding</option>
+          <option value="20">Marth Brae Rafting</option>
+          <option value="80">Mystic Mountain Adventure</option>
+          <option value="30">Rick's Cafe</option>
+          <option value="35">YS Falls Adventure</option>
+        </select>
+        <div *ngIf="destination?.invalid && pickUp?.valid">
+          <span class="error">Destination Required</span>
+        </div>
+      </div>
+    </div>
+    <div class="persons">
+      <div class="adults">
+        <label for="Adults">Adults<span *ngIf="adult?.invalid" style="color: red;">*</span></label>
+        <input type="number" placeholder="Number of Adults" min="0" formControlName="adult">
+        <div *ngIf="adult?.invalid && adult?.touched">
+          <span class="error">Number of Adults Required</span>
+        </div>
+      </div>
+      <div class="children">
+        <label for="children">Children<span *ngIf="children?.invalid" style="color: red;">*</span></label>
+        <input type="number" placeholder="Number of Children" min="0" formControlName="children">
+        <div *ngIf="children?.invalid && children?.touched">
+          <span class="error">Number of Children Required</span>
+        </div>
+      </div>
+    </div>
+    <div class="date">
+      <label for="Date">Date<span *ngIf="ddate?.invalid" style="color: red;">*</span></label>
+      <input type="date" formControlName="ddate" id="dateSelect">
+      <div *ngIf="ddate?.invalid && ddate?.touched">
+        <span class="error">Date Required</span>
+      </div>
+    </div>
+    <div class="bankCard">
+      <div class="cardType">
+        <label for="Card Type">Card Type<span *ngIf="cardType?.invalid" style="color: red;">*</span></label>
+        <!-- <label for="Bank Card">Card Type<span *ngIf="cardNumber?.invalid" style="color: red;">*</span></label> -->
+        <select formControlName="cardType">
+          <option [value]="cardType" *ngFor="let cardType of creditCardTypes">
+            {{ cardType }}
+          </option>
+        </select>
+      </div>
+      <div class="cardNumber">
+        <label for="Bank Card"  style="margin-left: 8px;">Bank Card Number<span *ngIf="cardNumber?.invalid" style="color: red;">*</span></label>
+        <input type="text" placeholder="Credit Card Number" formControlName="cardNumber">
+        <div style="margin-left: 8px;" *ngIf="cardNumber?.invalid && cardNumber?.touched">
+          <span class="error">Enter Valid Card Number</span>
+        </div>
+      </div>
+      <!-- <label for="Bank Card">Bank Card Number<span *ngIf="cardNumber?.invalid" style="color: red;">*</span></label>
+      <input type="text" placeholder="Credit Card Number" formControlName="cardNumber" pattern="[[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}]*">
+      <div *ngIf="cardNumber?.invalid && cardNumber?.touched">
+        <span class="error">Enter Valid Card Number</span>
+      </div> -->
+    </div>
+    <div class="CVC">
+      <div class="cvvNumber">
+        <label for="CVC number">CVC<span *ngIf="cvcNumber?.invalid" style="color: red;">*</span></label>
+        <input type="text" placeholder="CVC" formControlName="cvcNumber" min pattern="[[0-9]{3}]*">
+        <div *ngIf="cvcNumber?.invalid && cvcNumber?.touched">
+          <span class="error">Enter CVC</span>
+        </div>
+      </div>
+      <div class="cardExpire">
+        <div class="monthExpire">
+        <label for="Month">Expiration<span *ngIf="cvcNumber?.invalid" style="color: red;">*</span></label>
+          <select name="MONTH" formControlName="monthExpire">
+            <option>month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <div *ngIf="monthExpire?.invalid && monthExpire?.touched">
+            <span class="error">
+              Select Month
+            </span>
+          </div>
+        </div>
+        <div class="yearExpire">
+        <label for="Year">Year<span *ngIf="cvcNumber?.invalid" style="color: red;">*</span></label>
+          <select name="YEAR" formControlName="yearExpire">
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+          <div *ngIf="monthExpire?.valid && yearExpire?.untouched && yearExpire?.invalid">
+            <span class="error" >
+              Select Year
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cost" *ngIf="bookingForm?.valid">
+      {{grandTotalCalc()}}
+      <p>GRAND TOTAL:{{grandTotal | currency}}</p>
+      <p>QUOTE IN JMD:{{usQuote | currency}}</p>
+    </div>
+    <div class="submitBtn">
+      <input type="submit" value="BOOK TOUR" [disabled]="bookingForm?.invalid"  >
+    </div>
+  </div>
+</form>
+
+<app-footer></app-footer>

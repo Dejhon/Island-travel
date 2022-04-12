@@ -1,0 +1,92 @@
+form{
+  margin: auto;
+  width: 240px;
+}
+
+h1{
+  text-align: center;
+}
+
+.email{
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 20px;
+  width: 235px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.password{
+  margin-top: 30px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 20px;
+  width: 235px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.password i{
+  margin-left: 15px;
+}
+
+.email input, .password input{
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+input:invalid{
+  animation: shake 300ms;
+  color: red;
+}
+
+input:valid{
+  color: gray;
+}
+
+@keyframes shake{
+  25% {transform: translateX(5px);}
+  50% {transform: translateX(-5px);}
+  75% {transform: translateX(5px);}
+}
+
+.error{
+  color:red;
+}
+
+.route{
+  margin-top: 15px;
+  color: gray;
+}
+
+.loginBtn{
+ margin-top: 20px;
+ text-align: center;
+}
+
+.loginBtn input{
+  background-color: violet;
+  color: white;
+  border:  1px solid violet;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.loginBtn input:disabled{
+  cursor:not-allowed;
+}
+
+
+
+
+.signUp_btn input:disabled{
+  cursor: not-allowed;
+}
+
+.signUp_btn{
+  margin-top: 30px;
+}
+

@@ -1,0 +1,126 @@
+.main_wrapper{
+  padding-top: 36%;
+  padding-bottom: 35px;
+}
+
+.title{
+  text-align: center;
+  font-size: 30px;
+  color: gray;
+  padding: 5px;
+}
+
+.filter{
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 20% 80%;
+  border: 1px solid rgb(233, 236, 240);
+  margin-left: 80px;
+}
+
+.filter .filterBtn{
+  width: 300px;
+  height: 50px;
+
+}
+
+.filter .filterBtn select{
+  width: inherit;
+  height: inherit;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: gray;
+}
+
+.filter .search{
+  width: 100%;
+  height: 50px;
+}
+
+.filter .search input{
+  width:inherit;
+  height: inherit;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-left: 2px solid rgb(233, 236, 240);
+}
+
+.container{
+  margin-top: 90px;
+  margin-bottom: -100px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+}
+
+
+.wrapper{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 80px;
+  /* position: absolute; */
+  opacity: 1;
+}
+
+.wrapper .image img{
+  width:182px;
+  height: 160px;
+  border: 1px solid whitesmoke;
+}
+
+.wrapper .info{
+  margin-left: 30px;
+}
+
+.wrapper .location{
+  padding-bottom: 3px;
+  width: 150px;
+  text-align: center;
+  height: 25px;
+  color: violet;
+}
+
+.wrapper .location .icon{
+  padding-right: 2px;
+}
+
+.info .descriptions{
+  display: flex;
+}
+
+.info .descriptions p{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.info .descriptions .booking{
+  margin-top: -50px;
+}
+
+.info .descriptions .booking h2{
+  text-align: center;
+}
+
+.info .descriptions .booking button{
+  width: 180px;
+  padding: 10px;
+  border: 1px solid violet;
+  background-color: violet;
+  color: white;
+  font-size: 18px;
+  margin-top: -12px;
+}
+
+.info .descriptions .booking button .text{
+  margin-left: 10px;
+}
+
+.info .descriptions .booking button .text a{
+  text-decoration: none;
+  color: white;
+}
+

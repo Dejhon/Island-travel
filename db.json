@@ -1,0 +1,213 @@
+{
+  "Destination": [
+    {
+      "companyName": "Dunn's River Falls",
+      "price": "20",
+      "companyImage": "../../../assets/Images/Dunns-river.jpg"
+    },
+    {
+      "companyName": "Dolphin Cove",
+      "price": "80",
+      "companyImage": "../../../assets/Images/dolphin_cove.jpg"
+    },
+    {
+      "companyName": "Kool Runnings",
+      "price": "20",
+      "companyImage": "../../../assets/Images/kool-runnings.jpg"
+    },
+    {
+      "companyName": "Marth Brae Rafting",
+      "price": "30",
+      "companyImage": "../../../assets/Images/martha-brae.jpg"
+    },
+    {
+      "companyName": "Rick's Cafe",
+      "price": "30",
+      "companyImage": "../../../assets/Images/Rick-cafe.jpg"
+    },
+    {
+      "companyName": "YS Falls Jamaica",
+      "price": "35",
+      "companyImage": "../../../assets/Images/YSfalls.jpg"
+    }
+  ],
+  "Reviews": [
+    {
+      "customerName": "Mary Hendricks",
+      "customerImage": "../../../assets/Images/mary.jpg",
+      "customerReview": "Island Travel is the most reliable and trustworthy tour company to go to. I have been using this company for the past 2 years; they have exemplary customer service skills, and prices are affordable.",
+      "keyLine": "Reliable and Trustworthy"
+    },
+    {
+      "customerName": "Odayne Whitmoore",
+      "customerImage": "../../../assets/Images/odayne.jpg",
+      "customerReview": "The experience was great. They made it very easy to book with. We went to YS Falls, the journey was great and we had a blast. I am definetely booking with this company again. Experience was worth 10/10.",
+      "keyLine": "The Experience was great"
+    },
+    {
+      "customerName": "Lisa Blake",
+      "customerImage": "../../../assets/Images/tamat.jpg",
+      "customerReview": "This was my first experience using Island Travel.They made things so easy and the cost for everything was affordable. Whenever we had an enquiry, response from the the team was quick.",
+      "keyLine": "Affordable"
+    }
+  ],
+  "Customer": [
+    {
+      "email": "dejhonsherman@gmail.com",
+      "password": "DEJHONSHERMAN",
+      "id": 1
+    },
+    {
+      "email": "you@gmail.com",
+      "password": "PASSWORD",
+      "id": 2
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "PASSWORD",
+      "id": 3
+    }
+  ],
+  "Explore": [
+    {
+      "Picture": "../../../assets/Images/exploreAppleton.jpg",
+      "Name": "Appleton Estate",
+      "Location": "Westmoreland",
+      "Price": "50",
+      "Description": "Appleton is located on the South Coast of our island paradise. Upon arrival at the Appleton Estate, you'll enjoy a guided tour of its history and sample rum."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreAppleton2.jpg",
+      "Name": "Appleton Estate",
+      "Location": "Westmoreland",
+      "Price": "50",
+      "Description": "Appleton is located on the South Coast of our island paradise. Upon arrival at the Appleton Estate, you'll enjoy a guided tour of its history and sample rum."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBay1.jpg",
+      "Name": "Horse Back Riding",
+      "Location": "Montego Bay",
+      "Price": "35",
+      "Description": "Get ready for an exciting horseback ride n swim experience. Ride through the scenic mountainside and in the beautiful Caribbean Sea."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBay2.jpg",
+      "Name": "ATV Montego Bay",
+      "Location": "Montego Bay",
+      "Price": "35",
+      "Description": "Get ready for an exciting ATV adventure through the rugged terrain. Explore Jamaica's countryside as you take a ride on an ATV Quad."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBay3.jpg",
+      "Name": "Deep Sea Fishing",
+      "Location": "Montego Bay",
+      "Price": "60",
+      "Description": "Climb aboard for a private deep sea fishing charter with an experienced Captain and crew. Explore the Caribbean Sea and try to reel in an impressive catch."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBlack.jpg",
+      "Name": "Black River Safari",
+      "Location": "St.Elizabeth",
+      "Price": "40",
+      "Description": "Discover the beauty of the South Coast with a 1 1/2 hour boat tour by motor up Jamaica's largest navigable river and through what is Jamaica's largest wetland."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBlue1.jpg",
+      "Name": "Blue Hole Secret Falls",
+      "Location": "St.Anns",
+      "Price": "30",
+      "Description": "Create some great memories as you go down this fresh body of water surrounded by lush and tropical scenery."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreBlue2.jpg",
+      "Name": "Blue Hole Secret Falls",
+      "Location": "St.Anns",
+      "Price": "30",
+      "Description": "Create some great memories as you go down this fresh body of water surrounded by lush and tropical scenery."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreDolphin1.jpg",
+      "Name": "Dolphin Cove",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "At Dolphin Cove, get an up-close experience with these fascinating sea creatures. Interact with dolphins, stingrays (barbs removed) or even harmless sharks."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreDolphin2.jpg",
+      "Name": "Dolphin Cove",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "At Dolphin Cove, get an up-close experience with these fascinating sea creatures. Interact with dolphins, stingrays (barbs removed) or even harmless sharks."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreDunns1.jpg",
+      "Name": "Dunn's River Falls",
+      "Location": "St.Anns",
+      "Price": "20",
+      "Description": "Take the drive with us along Jamaica's scenic and picturesque north coastline to the beautiful Dunn's River Falls in the town of Ocho Rios."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreDunns2.jpg",
+      "Name": "Dunn's River Falls",
+      "Location": "St.Anns",
+      "Price": "20",
+      "Description": "Take the drive with us along Jamaica's scenic and picturesque north coastline to the beautiful Dunn's River Falls in the town of Ocho Rios."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreDunns3.jpg",
+      "Name": "Dunn's River Falls",
+      "Location": "St.Anns",
+      "Price": "20",
+      "Description": "Take the drive with us along Jamaica's scenic and picturesque north coastline to the beautiful Dunn's River Falls in the town of Ocho Rios."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMuseum1.jpg",
+      "Name": "Bob Marley Museum",
+      "Location": "Kingston",
+      "Price": "45",
+      "Description": "Kingston is the cultural district of the island. From the original colonial architecture to the not-to-be-missed Blue Mountains."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMystic.jpg",
+      "Name": "Mystic Mountain Adventure",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "Overview Get ready for an adventure-filled day at Mystic Mountain! Let your inner thrill-seeker take charge as you get up close and personal with a fascinating ecosystem."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMystic2.jpg",
+      "Name": "Mystic Mountain Adventure",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "Overview Get ready for an adventure-filled day at Mystic Mountain! Let your inner thrill-seeker take charge as you get up close and personal with a fascinating ecosystem."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMystic3.jpg",
+      "Name": "Mystic Mountain Adventure",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "Overview Get ready for an adventure-filled day at Mystic Mountain! Let your inner thrill-seeker take charge as you get up close and personal with a fascinating ecosystem."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMystic4.jpg",
+      "Name": "Mystic Mountain Adventure",
+      "Location": "St.Anns",
+      "Price": "80",
+      "Description": "Overview Get ready for an adventure-filled day at Mystic Mountain! Let your inner thrill-seeker take charge as you get up close and personal with a fascinating ecosystem."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreMystic5.jpg",
+      "Name": "Mystice Luminous Lagoon",
+      "Location": "St.Anns",
+      "Price": "75",
+      "Description": "The Luminous Lagoon is said to be the largest and most brilliant of four in the world you can see this type of phenomenon, a fact that continually attracts and awes visitors and scientists from all over."
+    },
+    {
+      "Picture": "../../../assets/Images/exploreYS1.jpg",
+      "Name": "YS Falls Adventure",
+      "Location": "St.Elizabeth",
+      "Price": "50",
+      "Description": "Take a ride through the mountains and over to Jamaica's scenic South Coast to one of Jamaica's most beautiful and spectacular waterfalls; the YS Falls."
+    }
+  ]
+}
